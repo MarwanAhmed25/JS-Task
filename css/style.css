@@ -114,9 +114,27 @@ p.first{
     font-size: 40px;
 }
 
-      /* 'lg': '1024px', */
-      @media (min-width: 1024px) { 
+@media (min-width: 992px) { 
         .w-33{
             width: 33.3333%;
         }
-    }
+
+        #navbarNav{
+            position: static;
+            border: none;
+            background-color: #1E202B;
+        }
+
+        #navbarNav ul li{
+            border-bottom: none;
+        }
+
+        #navbarNav ul li:hover, #navbarNav ul li.active{
+            border: 1px var(--bs-info) solid;
+            border-top-right-radius: var(--bs-border-radius-pill) !important;
+            border-bottom-right-radius: var(--bs-border-radius-pill) !important;
+            border-top-left-radius: var(--bs-border-radius-pill) !important;
+            border-bottom-left-radius: var(--bs-border-radius-pill) !important;
+        }
+        
+}
