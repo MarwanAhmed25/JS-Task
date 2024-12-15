@@ -1,0 +1,122 @@
+body{
+    font-family: "Titillium Web", sans-serif;
+    background-color: #1E202B;
+    margin: 0;
+}
+
+
+nav i{
+    font-size: 40px;
+    
+}
+
+nav button{
+    border: none;
+}
+
+#navbarNav{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: -300px;
+    background-color: #262936;
+    border-radius: 5%;
+    color: white;
+    transition: top 1s ease-in;
+}
+
+#navbarNav.show{
+    top: 130px;
+}
+
+#navbarNav ul li{
+    border-bottom: 1px gray solid;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#navbarNav ul li a{
+    color: white;
+}
+
+
+#navbarNav ul li a:hover, #navbarNav ul li a.active{
+    color: var(--bs-info);
+}
+
+#navbarNav ul li.last{
+    border-bottom: none
+}
+
+header{
+    background-image: url('../images/banner.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+
+}
+
+
+
+
+
+input.custom-input{
+    background-color: #24353F;
+    color: white;
+    border: none;
+    font-size: 20px;
+
+}
+
+input.custom-input::placeholder{
+    color: gray;
+}
+
+input.custom-input:focus{
+    background-color: #24353F;
+    color: white;
+    box-shadow: none;
+}
+
+button.custom-btn:hover{
+    color: white;
+}
+
+
+div.btn-container{
+    background-color: #24353F;
+}
+
+.days .one, .three{
+    
+    background-color: #262936;
+    width: 100%;
+}
+
+p.first{
+    background-color: #1f212b;
+}
+
+
+.days .two{
+    background-color: #2e3141;
+    width: 100%;
+
+}
+
+.days .second{
+    background-color: #262835;
+}
+
+.h1{
+    font-size: 40px;
+}
+
+      /* 'lg': '1024px', */
+      @media (min-width: 1024px) { 
+        .w-33{
+            width: 33.3333%;
+        }
+    }
