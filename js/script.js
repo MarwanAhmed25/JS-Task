@@ -1,5 +1,5 @@
 const apiKey = '4557a25e1df34627b9f112239241112';
-const baseApi = 'http://api.weatherapi.com/v1/forecast.json';
+const baseApi = 'https://api.weatherapi.com/v1/forecast.json';
 const containerDiv = document.querySelector('.days');
 const monthNames = [
     "January", "February", "March", "April", "May", 
