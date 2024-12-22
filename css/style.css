@@ -9,9 +9,8 @@ nav i{
     font-size: 40px;
     
 }
-nav{
+nav.custom-nav{
     background-color: #3A497B;
-    position: fixed;
     transform: translate(0%, -50%);
 }
 
@@ -77,6 +76,10 @@ span.custom-bg{
     border-top: 1px black solid;
 }
 
+.main-game-detail>section{
+    width: 100%;
+}
+
 @media (min-width: 992px) { 
         .w-33{
             width: 33.3333%;
@@ -90,7 +93,9 @@ span.custom-bg{
         #navbarNav ul li{
             border-bottom: none;
         }
-
+        .main-game-detail>section{
+            width: 50%;
+        }
       
         
 }
