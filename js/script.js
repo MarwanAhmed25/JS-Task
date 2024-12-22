@@ -24,10 +24,7 @@ navBarBtn.addEventListener('click', ()=>{
 
 
     async function display(){
-        const response = await fetch(api, {method:'GET', headers:{
-            "X-RapidAPI-Key":"761bBa3226msh868f0d927cb6ea4p117ef0jsn46d63d281712",
-            "X-RapidAPI-Host":"free-to-play-games-database.p.rapidapi.com",
-        }});
+        const response = await fetch(api, {method:'GET', mode:'no-cors'});
         const res = await response.json()
         console.log(res);
         
