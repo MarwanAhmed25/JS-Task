@@ -72,7 +72,9 @@ function showGames(games){
         `;
     }
     gamesContainer.innerHTML = container;
-    
+    const gamesDiv = document.querySelectorAll('.row .inner>div');
+const home = document.querySelector('.home');
+const detail = document.querySelector('.game-detail');
 
     for(let i=0; i<gamesDiv.length; i++){
             gamesDiv[i].addEventListener('click', async ()=>{
@@ -84,6 +86,8 @@ function showGames(games){
                     'x-rapidapi-host': 'free-to-play-games-database.p.rapidapi.com'
                 }
             };
+
+            
     
             try {
                 const response = await fetch(url, options);
@@ -115,9 +119,7 @@ function showGames(games){
                 `;
 
                 
-const gamesDiv = document.querySelectorAll('.row .inner>div');
-const home = document.querySelector('.home');
-const detail = document.querySelector('.game-detail');
+
 const closeDetail = document.querySelector('#close-btn');
 closeDetail.addEventListener('click', ()=>{
     home.classList.remove('d-none');
