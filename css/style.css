@@ -86,6 +86,13 @@ span.custom-bg{
     transform: scale(1.1);
 }
 
+#close-btn{
+    cursor: pointer;
+    background-color: #272B30;
+}
+
+
+
 @media (min-width: 992px) { 
         .w-33{
             width: 33.3333%;

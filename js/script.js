@@ -92,14 +92,13 @@ const detail = document.querySelector('.game-detail');
             try {
                 const response = await fetch(url, options);
                 const result = await response.json();
-                console.log(result);
                 home.classList.add('d-none');
                 detail.classList.remove('d-none');            
 
                 detail.innerHTML = `
                 <section class="header d-flex justify-content-between align-items-center">
             <h1>Game Deatil</h1>
-            <i class="fa-solid fa-xmark text-secondary" id="close-btn"></i>
+            <button id="close-btn" class="border-0"><i class="fa-solid fa-xmark text-secondary" ></i></button>
           </section>
           <section class="main-game-detail d-flex flex-wrap my-5">
             <section class="image-container">
@@ -120,11 +119,15 @@ const detail = document.querySelector('.game-detail');
 
                 
 
-const closeDetail = document.querySelector('#close-btn');
-closeDetail.addEventListener('click', ()=>{
-    home.classList.remove('d-none');
-            detail.classList.add('d-none'); 
-});
+            const closeDetail = document.querySelector('#close-btn');
+            console.log(closeDetail);
+            
+            closeDetail.addEventListener('click', ()=>{
+                console.log(';;;;;;;;;;;');
+                
+                home.classList.remove('d-none');
+                detail.classList.add('d-none'); 
+            });
                 
             } catch (error) {
                 console.error(error);
