@@ -1,5 +1,5 @@
 body{
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Comic Neue", serif;
     background-color: #272B30;
     margin: 0;
 }
@@ -12,7 +12,7 @@ nav i{
 nav{
     background-color: #3A497B;
     position: fixed;
-    transform: translateX(7%);
+    transform: translate(0%, -50%);
 }
 
 nav button{
@@ -55,11 +55,23 @@ nav button{
 
 header{
     background-image: url('../images/banner.png');
-    background-position: top top;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vh;
+    height: 35vh;
 
+}
+
+.image-container{
+    font-size: 0;
+}
+section.inner>div {
+    padding: 0;
+    border: 1px black solid;
+}
+
+.section-bottom{
+    border-top: 1px black solid;
 }
 
 @media (min-width: 992px) { 
