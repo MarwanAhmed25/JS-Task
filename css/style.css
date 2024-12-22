@@ -67,6 +67,8 @@ header{
 section.inner>div {
     padding: 0;
     border: 1px black solid;
+    cursor: pointer;
+    transition: transform 1s;
 }
 
 span.custom-bg{
@@ -78,6 +80,10 @@ span.custom-bg{
 
 .main-game-detail>section{
     width: 100%;
+}
+
+.row .inner>div:hover{
+    transform: scale(1.1);
 }
 
 @media (min-width: 992px) { 
