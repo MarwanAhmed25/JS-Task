@@ -25,7 +25,7 @@ navBarBtn.addEventListener('click', ()=>{
 
     async function display(){
         const response = await fetch(api, {method:'GET', mode:'no-cors'});
-        const res = await response.json()
+        const res = await response.json();
         console.log(res);
         
     }
