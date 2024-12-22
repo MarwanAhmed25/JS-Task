@@ -17,6 +17,22 @@ navBarBtn.addEventListener('click', ()=>{
     navBarLinks.classList.toggle('show');
 });
 
-input.addEventListener('input', ()=>{
-    getData(input.value);
-})
+
+
+
+    const api = 'https://www.freetogame.com/api/games';
+
+
+    async function display(){
+        const response = await fetch(api, {method:'GET', headers:{
+            "X-RapidAPI-Key":"761bBa3226msh868f0d927cb6ea4p117ef0jsn46d63d281712",
+            "X-RapidAPI-Host":"free-to-play-games-database.p.rapidapi.com",
+        }});
+        const res = await response.json()
+        console.log(res);
+        
+    }
+
+
+
+display();
