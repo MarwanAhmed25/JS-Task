@@ -70,6 +70,9 @@ section.inner>div {
     border: 1px black solid;
 }
 
+span.custom-bg{
+    background-color: #4A6792;
+}
 .section-bottom{
     border-top: 1px black solid;
 }
