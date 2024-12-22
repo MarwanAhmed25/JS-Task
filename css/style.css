@@ -1,6 +1,6 @@
 body{
     font-family: "Titillium Web", sans-serif;
-    background-color: #1E202B;
+    background-color: #272B30;
     margin: 0;
 }
 
@@ -8,6 +8,11 @@ body{
 nav i{
     font-size: 40px;
     
+}
+nav{
+    background-color: #3A497B;
+    position: fixed;
+    transform: translateX(7%);
 }
 
 nav button{
@@ -19,7 +24,6 @@ nav button{
     left: 5%;
     right: 5%;
     top: -300px;
-    background-color: #262936;
     border-radius: 5%;
     color: white;
     transition: top 1s ease-in;
@@ -32,7 +36,7 @@ nav button{
 #navbarNav ul li{
     border-bottom: 1px gray solid;
     width: 100%;
-    padding: 10px;
+    padding: 5px 10px;
     text-align: center;
 }
 
@@ -51,67 +55,11 @@ nav button{
 
 header{
     background-image: url('../images/banner.png');
-    background-position: center top;
+    background-position: top top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 25vh;
 
-}
-
-
-
-
-
-input.custom-input{
-    background-color: #24353F;
-    color: white;
-    border: none;
-    font-size: 20px;
-
-}
-
-input.custom-input::placeholder{
-    color: gray;
-}
-
-input.custom-input:focus{
-    background-color: #24353F;
-    color: white;
-    box-shadow: none;
-}
-
-button.custom-btn:hover{
-    color: white;
-}
-
-
-div.btn-container{
-    background-color: #24353F;
-}
-
-.days .one, .three{
-    
-    background-color: #262936;
-    width: 100%;
-}
-
-p.first{
-    background-color: #1f212b;
-}
-
-
-.days .two{
-    background-color: #2e3141;
-    width: 100%;
-
-}
-
-.days .second{
-    background-color: #262835;
-}
-
-.h1{
-    font-size: 40px;
 }
 
 @media (min-width: 992px) { 
@@ -122,19 +70,12 @@ p.first{
         #navbarNav{
             position: static;
             border: none;
-            background-color: #1E202B;
         }
 
         #navbarNav ul li{
             border-bottom: none;
         }
 
-        #navbarNav ul li:hover, #navbarNav ul li.active{
-            border: 1px var(--bs-info) solid;
-            border-top-right-radius: var(--bs-border-radius-pill) !important;
-            border-bottom-right-radius: var(--bs-border-radius-pill) !important;
-            border-top-left-radius: var(--bs-border-radius-pill) !important;
-            border-bottom-left-radius: var(--bs-border-radius-pill) !important;
-        }
+      
         
 }
